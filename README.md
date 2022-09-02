@@ -1,64 +1,60 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+### Simple CRUD Jenis Hewan,Ras Hewan dan  Postingan Pengadopsian
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+#### Penjelasan Project
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Project ini adalah project Simple CRUD yang bisa mengotorasi manajemen data Jenis Hewan,Ras Hewan dan Postingan Pengadopsian. Project ini terinsipirasi dari project tugas akhir D3 yang sudah penulis kerjakan dan selesaikan dengan judul [Hewan Siapa](https://github.com/daffaraka/Hewan-Siapa) .
+Dalam project ini, penulis memakai Framework Laravel 8 , serta memakai panel admin Ample Dashboard .
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+___
+#### Fitur Project
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+ * CRUD Jenis Hewan
+ * CRUD Ras Hewan 
+ * CRUD Post Adopsi
+ * Authentication (login,logout dan register )
+ * Admin Dashboard
+ * Live Search menggunakan Ajax
 
-## Learning Laravel
+___
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+#### Desain Database 
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<img src="public/desain db/desain db.png">
 
-## Laravel Sponsors
+Penjelasan : 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+* Jenis Hewan - Ras Hewan
+Jenis Hewan digambarkan sebagai Parents dari Ras Hewan. Ras Hewan tidak akan bisa dibuat jika tidak terdapat data jenis hewan. Relasi yang dibuat menggunakan foreign key pada tabel **ras_hewan** dengan field **id_jenis_hewan** dengan property onUpdate dan onDelete **cacade**  
 
-### Premium Partners
+<br>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+* RasHewan dan PostAdopsi
+Ras Hewan  digambarkan sebagai Parents dari PostAdopsi. PostAdopsi tidak akan bisa dibuat jika tidak terdapat data ras hewan . Relasi yang dibuat menggunakan foreign key pada tabel **post_adopsi** dengan field **id_ras_hewan** dengan property onUpdate dan onDelete **cacade**  
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+___
+#### Screenshot aplikasi
 
-## Code of Conduct
+1. Jenis Hewan
+<img src="public/ss aplikasi/jenis hewan.png">
+1. Ras Hewan
+<img src="public/ss aplikasi/ras hewan.png">
+1. Post Adopsi
+<img src="public/ss aplikasi/post adopsi.png">
+1. Login
+<img src="public/ss aplikasi/login.png">
+1. Contoh Pencarian
+<img src="public/ss aplikasi/post adopsi cari.png">
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+#### Dependency
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+ * Laravel 8 
+ * Bootstrap
+ * PHP 7++
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
