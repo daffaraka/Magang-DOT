@@ -39,13 +39,13 @@ ___
 
 1. Jenis Hewan
 <img src="public/ss aplikasi/jenis hewan.png">
-1. Ras Hewan
+2. Ras Hewan
 <img src="public/ss aplikasi/ras hewan.png">
-1. Post Adopsi
+3. Post Adopsi
 <img src="public/ss aplikasi/post adopsi.png">
-1. Login
+4. Login
 <img src="public/ss aplikasi/login.png">
-1. Contoh Pencarian
+5. Contoh Pencarian
 <img src="public/ss aplikasi/post adopsi cari.png">
 
 ---
